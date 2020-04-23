@@ -8,6 +8,7 @@ class Board
   #Optionnellement on peut aussi lui rajouter un autre sous le nom @count_turn pour compter le nombre de coups joué
   attr_accessor :a1, :a2, :a3, :b1, :b2, :b3, :c1, :c2, :c3
   @@cases_array = []
+  @@cases_grid = []
   
   def initialize
     #Quand la classe s'initialize, elle doit créer 9 instances BoardCases
@@ -29,26 +30,13 @@ class Board
     return @@cases_array 
   end
 
+  def get_grid
+    @@cases_grid = [[@a1, @a2, @a3],[@b1, @b2, @b3], [@c1, @c2, @c3]]
+    return @@cases_grid
+  end
 
+end # Board
 
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-
-#binding.pry
-end # Boar
-
-#moi = Board
 
   
 
