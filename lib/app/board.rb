@@ -22,7 +22,6 @@ class Board
     @c1 = BoardCase.new("C1", "")
     @c2 = BoardCase.new("C2", "")
     @c3 = BoardCase.new("C3", "")
-    
   end
   
   def get_cases_array
@@ -30,10 +29,10 @@ class Board
     return @@cases_array 
   end
 
-  def get_grid
-    @@cases_grid = [[@a1, @a2, @a3],[@b1, @b2, @b3], [@c1, @c2, @c3]]
-    return @@cases_grid
-  end
+  # def get_grid #pour le faire apparaitre moi.board.get_cases_array
+  #   @@cases_grid = [[@a1, @a2, @a3],[@b1, @b2, @b3], [@c1, @c2, @c3]]
+  #   return @@cases_grid
+  # end
 
 end # Board
 
